@@ -1,0 +1,49 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial;
+
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+.container{
+    width: 450px;
+    margin: auto;
+}
+
+.taneuh{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.taneuh::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 120px;
+    background: url(../img/taneuh.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+.oray{
+    width: 80%;
+    height: 100%;
+    background: url(../img/oray.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 80px;
+    transition: top 0.3s;
+}
+
+.taneuh.muncul .oray{
+    top: 0;
+}
